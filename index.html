@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="layout.css" type="text/css">
+    <title></title>
+    <script>
+      function colorit()
+      {
+        var color_code = ['#FFD700','#7FFF00','#00FFFF','#00BFFF'];
+        var color = color_code[Math.floor(Math.random() * color_code.length)];
+        document.body.style.background = color;
+      }
+    </script>
+  </head>
+  <body onload="colorit()">
+    <h1 id="name" align="center"><u>HIDE THE GREEN</u></h1>
+    <h2 id="play" ><u>How to play :</u></h2>
+    <h3 id="step">
+      <ul>
+        <li>Choose a pattern.</li>
+        <li>Choose three blocks on the board where you want to place the pattern.</li>
+        <li>To place the pattern click on the block of the board corresponding to the middle block of the pattern.</li>
+        <li>Repeat these steps until there is any further move possible.</li>
+        <li>If you succeed in covering all the green blocks using minimum number of pattern then you won the game.</li>
+        <li>Otherwise you loose the game.</li>
+        <li>To start the game click on the "Start Game" button</li>
+        </ul>
+    </h3>
+    <h2 id="play" > Best of luck!</h2>
+    <form action="game.html" align="center">
+     <input id="btn" title="Start the Game" style="width:120px" type="submit" value="Start Game">
+    </form>
+  </body>
+</html>

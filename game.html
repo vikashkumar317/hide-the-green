@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="layout.css" type="text/css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <input id="btn" type="button" title="Restart the game" name="Restart" value="Restart" onclick="newGame()">
+  <form action="index.html">
+   <input id="btn1" title="Go to home page" type="submit" value="Home">
+  </form>
+  <br>
+  <table id="board" align="center" style="background-color:yellow; border:2px solid black;">
+    <script>
+      startGame();
+    </script>
+  </table>
+  <br>
+
+  <table style="width:100%; padding-left:15%">
+    <tr>
+      <td>
+        <label>
+        <input class="radio" type="radio" name='pattern' value='1' checked>
+          <table style="width:60px; height:60px;">
+            <tr>
+              <td></td>
+              <td style="background-color:blue;"></td>
+            </tr>
+            <tr style="background-color:blue;">
+              <td></td>
+              <td></td>
+          </table>
+        </label>
+      </td>
+      <td>
+        <label>
+        <input class="radio" type="radio" name='pattern' value='2'>
+        <table style="width:60px; height:60px;">
+          <tr style="background-color:blue;">
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td style="background-color:blue;"></td>
+            <td></td>
+          </tr>
+        </table>
+        </label>
+      <td>
+        <label>
+        <input class="radio" type="radio" name='pattern' value='3'>
+        <table style="width:60px; height:60px;">
+          <tr style="background-color:blue;">
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="background-color:blue;"></td>
+          </tr>
+        </table>
+        </label>
+      </td>
+      <td>
+        <label>
+        <input class="radio" type="radio" name='pattern' value='4'>
+        <table style="width:60px; height:60px;">
+          <tr>
+            <td style="background-color:blue;"></td>
+            <td></td>
+          </tr>
+          <tr style="background-color:blue;">
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        </label>
+      </td>
+    </tr>
+  </table>
+  <div id="nice">NICE MOVE</div>
+  <div id="illegal">ILLEGAL MOVE</div>
+  <div id="won">WOW! You won the Game</div>
+  <div id="lose">OOPS! You lose the Game<br>You didn't cover all green tiles</div>
+  <div id="high">OOPS! You lose the Game<br>You didn't use minimum no of tiles</div>
+</body>
+
+</html>
